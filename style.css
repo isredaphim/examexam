@@ -1,9 +1,9 @@
 body {
+    background-image: url("yahoo.jpg");
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
-    color: black;
-margin: 0;
-padding: 0;
+    color: skyblue;
+
 }
 
 a:link,
@@ -14,13 +14,4 @@ a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 40px;
- 
 }
