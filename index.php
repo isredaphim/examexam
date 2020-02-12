@@ -16,6 +16,7 @@ $domOBJ->load("https://www.bls.gov/feed/jlt_latest.rss");
 <body>
     <div>
         <?php
+        <img src="doc.jpg" style="width=100%;height=25%"/>
         $content = $domOBJ->getElementsByTagName("item");
 
         foreach ($content as $data) {
