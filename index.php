@@ -16,7 +16,7 @@ $domOBJ->load("https://www.bls.gov/feed/jlt_latest.rss");
 <body>
     <div>
         <img src="doc.jpg" style="width=100%;height=25%"/></br>
-    <button a href="index2.php">CLICK ME </button>
+    <button a href="https://www.bls.gov/feed/lau_latest.rss">CLICK ME </button>
         <?php
       
         $content = $domOBJ->getElementsByTagName("item");
