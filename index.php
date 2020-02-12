@@ -8,34 +8,30 @@ $domOBJ->load("https://www.bls.gov/feed/jlt_latest.rss");
 
 <head>
     <meta charset="UTF-8">
-	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-<link a href="https://www.bls.gov/feed/lau_latest.rss"/>
     <div>
-<img src="doc.jpg" style="width:100%;height:25%" />
-
-<div class="container">
-
- <div class="centered">Job Opening and Labor Turnover Survey</div>
-</div>
-
-
         <?php
-        $content = $domOBJ->getElementsByTagName("entry");
+        $content = $domOBJ->getElementsByTagName("item");
 
         foreach ($content as $data) {
             $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-            $content = $data->getElementsByTagName("content")->item(0)->nodeValue;
+            $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
+            $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+            $source = $data->getElementsByTagName("source")->item(0)->nodeValue;
+            $pubdate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
         ?>
             <ul>
                 <li><strong><?php echo $title ?></strong></li>
                 <ul>
-                    <li><?php echo $content ?></li>
+                    <li><?php echo $link ?></li>
+                    <li><?php echo $description ?></li>
+                    <li><?php echo $source ?></li>
+                    <li><?php echo $pubdate ?></li>
                 </ul>
             </ul>
         <?php } ?>
