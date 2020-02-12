@@ -15,7 +15,7 @@ $domOBJ->load("https://www.bls.gov/feed/jlt_latest.rss");
 
 <body>
     <div>
-          <img src="doc.jpg" style="width=100%;height=25%"/>
+        <img src="doc.jpg" style="width=100%;height=25%"/></br>
         <button type="button">CLICK CLICK<link a href="index2.php"/></button>
         <?php
       
