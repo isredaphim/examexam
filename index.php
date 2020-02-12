@@ -39,7 +39,7 @@ $domOBJ->load("https://www.bls.gov/feed/jlt_latest.rss");
             </ul>
         <?php } ?>
     </div>
-    <a href="https://www.bls.gov/feed/lau_latest.rss"></a>
+    
 </body>
 
 
